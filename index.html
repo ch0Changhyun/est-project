@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>HODU</title>
+
+</head>
+<body>
+<header>
+<nav class = "nav-bar">
+    <div class="contents-style">
+        <img class= "logoh" src="img/Logo.png" alt="호두 로고">
+        <ul class ="nav-contents">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+            <button>Download</button>
+        </ul>
+    </div>
+</nav>
+</header>
+<main>
+
+        <section class="home-part">
+            <div class="contents-style">
+            <div class="contents">
+                <h1>Lorem ipsum is simply <br>
+                    dummy text of the printing and</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and <br>
+                    typesetting industry. <br>
+                    Lorem Ipsum has been the industry's standard dummy text <br>
+                    ever since the 1500s, when an unknown</p>
+                <button>Download</button>
+            </div>
+            <img src="img/cat1.png" alt="고양이 사진">
+            </div>
+        </section>
+
+        <section class="about-part">
+            <div class="contents-style">
+            <img src="img/cat2.png" alt="about 부분에 들어가는 고양이 사진">
+            <div class="contents2">
+                <h2>Lorem Ipsum is simply <br>
+                    dummy text of the printing <br>
+                    and dummy text</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. </p>
+            </div>
+            </div>
+        </section>
+
+        <section class="unlimited-img">
+            <div class="contents-style">
+            <div class="contents3">
+                <h2>dummy text of the printing and dummy</h2>
+                <p>Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+                <div id="image-list"></div>
+                <div id ="continueBox">
+                    <strong>Continue exploring HODU</strong>
+                    <button id="show-more">Show More</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="support-part">
+            <hr class = "line">
+            <div class="contents-style">
+                <h2>Where you'll be : </h2>
+                <div class="map_wrap">
+                    <div id="map"></div>
+                    <div class="hAddr">
+                        <span class="title">지도중심기준 행정동 주소정보</span>
+                        <span id="centerAddr"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sub" style="background: url('img/cat5.png')">
+            <div class="contents-style">
+                <fieldset class="sub-box">
+                    <legend>구독 박스</legend>
+                    <aside class="left">
+                        <strong>Subscribe to our Blog post</strong>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                            Lorem ipsum has been the industry's standard dummy text
+                        </p>
+                    </aside>
+                    <aside class="right">
+                        <label for="email"></label><input type="email" id="email" placeholder="     💌 Enter your e-mail address">
+                        <button type="submit" id="open-modal">Subscribe</button>
+                    </aside>
+                </fieldset>
+            </div>
+
+        </section>
+
+        <div id="modal">
+            <div class="modal-content" style=" background-image: url('img/modalImg.png')">
+                <img src="img/cat3.png" alt="고양이 사진">
+                <h2>Thank you!</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing industry</p>
+                <button id="close-modal">OK! I Love HODU</button>
+            </div>
+        </div>
+        <input class = "scroll-up" type="button" value="🔼" onclick="clickBtn()">
+</main>
+<footer>
+
+        <div class="foot-part">
+            <div class="contents-style">
+                <img class= "logo" src="img/Logo.png" alt="호두 로고">
+                <div class="outside-platform">
+                    <a href="https://www.tistory.com/" target="_blank" class="Blog"><img src="img/blog.png" alt="블로그 로고"></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="Instagram"><img src="img/instagram.png" alt="인스타그램 로고"></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="Meta"><img src="img/facebook.png" alt="페이스북 로고"></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="Youtube"><img src="img/youtube.png" alt="유튜브 로고"></a>
+                </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=aa73349797c8e2e05eac0519676b850a&libraries=services"></script>
+<script src = "JavaScript/index.js"></script>
+</body>
+</html>
