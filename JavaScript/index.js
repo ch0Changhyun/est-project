@@ -1,4 +1,4 @@
-//이미지 기능
+//pictsum api 이미지 기능
 const imageList = document.getElementById('image-list');
 const showMore = document.getElementById('show-more');
 
@@ -44,9 +44,9 @@ const throttling = (callback, delay) => {
         }
     };
 };
-
+// 1초의 딜레이 시간 주기
 const throttleFetchImages = throttling(fetchImages, 1000);
-
+// 더보기 버튼을 누르면 무한 스크롤 하다가 특정 개수를 출력 완료하면 멈추고 이후에는 더보기 버튼 눌러서 추가로 출력
 const infiniteScroll = () => {
     if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 10 && pageToFetch <= 25 ) {
         throttleFetchImages();
@@ -59,6 +59,8 @@ fetchImages();
 showMore.addEventListener('click', fetchImages);
 
 window.addEventListener('scroll', infiniteScroll);
+
+
 
 // 카카오 맵 기능
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
@@ -131,6 +133,9 @@ function displayCenterInfo(result, status) {
         }
     }
 }
+
+
+
 // 모달 창 기능
 const modal = document.getElementById("modal");
 const openModal = document.getElementById("open-modal");
